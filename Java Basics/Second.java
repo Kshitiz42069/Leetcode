@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
 public class Second {
+    public static int addm(int a, int b){
+        return a+b;
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the size of the array");
@@ -15,5 +18,6 @@ public class Second {
             res= res+arr[i];
         }
         System.out.println("it is what it is "+res);
+        sc.close();
     }
 }
