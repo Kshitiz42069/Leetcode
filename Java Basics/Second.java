@@ -9,15 +9,17 @@ public class Second {
         System.out.println("Enter the size of the array");
         int a = sc.nextInt();
         int []arr = new int[a];
+        System.out.println("Enter the elements of the array");
         for (int i = 0; i < a; i++) {
             arr[i]=sc.nextInt();
         }
-        System.out.println("Sum of all the elements is");
-        int res = 0;
+        int res = Integer.MIN_VALUE;
         for (int i = 0; i < a; i++) {
-            res= res+arr[i];
+            if(res<arr[i]){
+                res = arr[i];
+            }
         }
-        System.out.println("it is what it is "+res);
+        System.out.println("Biggest number is "+res);
         sc.close();
     }
 }
